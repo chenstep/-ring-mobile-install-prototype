@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" fill="none">
+  <!-- Background -->
+  <rect width="400" height="350" rx="8" fill="#1a2332"/>
+
+  <!-- Ground/base -->
+  <rect x="120" y="290" width="160" height="10" rx="2" fill="#4a5568"/>
+
+  <!-- Tower body -->
+  <rect x="180" y="80" width="40" height="210" rx="4" fill="#2d3748"/>
+  <rect x="185" y="85" width="30" height="200" rx="2" fill="#4a5568"/>
+
+  <!-- Camera housing at top -->
+  <rect x="165" y="55" width="70" height="35" rx="6" fill="#2d3748"/>
+  <circle cx="185" cy="72" r="10" fill="#1a73a7"/>
+  <circle cx="185" cy="72" r="6" fill="#0f1111"/>
+  <circle cx="215" cy="72" r="8" fill="#1a73a7"/>
+  <circle cx="215" cy="72" r="5" fill="#0f1111"/>
+
+  <!-- Solar panel (angled) -->
+  <polygon points="240,120 320,100 325,130 245,150" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <line x1="255" y1="118" x2="258" y2="146" stroke="#4a5568" stroke-width="0.5"/>
+  <line x1="270" y1="114" x2="273" y2="142" stroke="#4a5568" stroke-width="0.5"/>
+  <line x1="285" y1="110" x2="288" y2="138" stroke="#4a5568" stroke-width="0.5"/>
+  <line x1="300" y1="106" x2="303" y2="134" stroke="#4a5568" stroke-width="0.5"/>
+
+  <!-- Trailer wheels -->
+  <circle cx="155" cy="300" r="15" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+  <circle cx="155" cy="300" r="5" fill="#4a5568"/>
+  <circle cx="245" cy="300" r="15" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+  <circle cx="245" cy="300" r="5" fill="#4a5568"/>
+
+  <!-- Trailer frame -->
+  <rect x="130" y="280" width="140" height="12" rx="2" fill="#2d3748"/>
+  <rect x="100" y="283" width="35" height="6" rx="3" fill="#4a5568"/>
+
+  <!-- Status LED -->
+  <circle cx="200" cy="48" r="4" fill="#1a8917"/>
+
+  <!-- Ring text -->
+  <text x="200" y="335" font-family="Arial, sans-serif" font-size="12" fill="#718096" text-anchor="middle">Ring Mobile Security Tower</text>
+</svg>
