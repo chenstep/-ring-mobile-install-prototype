@@ -33,13 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnNext2 = document.getElementById('btnNext2');
 
     function checkStep2() {
-        const address = document.getElementById('installAddress').value.trim() !== '';
+        const addressFields = ['installAddress', 'installCity', 'installState', 'installZip'];
+        const allAddressFilled = addressFields.every(id => document.getElementById(id).value.trim() !== '');
         const locationChecked = document.querySelector('input[name="locationType"]:checked');
         const deviceChecked = document.querySelector('input[name="deviceType"]:checked');
         const otherValid = !locationChecked || locationChecked.value !== 'other' ||
             document.getElementById('otherSpecify').value.trim() !== '';
 
-        if (address && locationChecked && deviceChecked && otherValid) {
+        if (allAddressFilled && locationChecked && deviceChecked && otherValid) {
             btnNext2.classList.add('active');
             btnNext2.disabled = false;
         } else {
@@ -48,7 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    document.getElementById('installAddress').addEventListener('input', checkStep2);
+    ['installAddress', 'installCity', 'installState', 'installZip'].forEach(id => {
+        document.getElementById(id).addEventListener('input', checkStep2);
+    });
     document.getElementById('otherSpecify').addEventListener('input', checkStep2);
     document.querySelectorAll('input[name="locationType"]').forEach(r => {
         r.addEventListener('change', checkStep2);

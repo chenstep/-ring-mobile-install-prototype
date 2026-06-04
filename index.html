@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ring Mobile Security Tower - Professional Installation Request</title>
-    <link rel="stylesheet" href="styles.css?v=9">
+    <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
     <!-- Amazon Navigation Bar -->
@@ -106,8 +106,23 @@
                                 <div class="input-two-col">
                                     <div class="input-col">
                                         <div class="form-group">
-                                            <label for="installAddress">Installation Address <span class="required">*</span></label>
-                                            <input type="text" id="installAddress" name="installAddress" placeholder="Enter full street address" required>
+                                            <label for="installAddress">Street Address <span class="required">*</span></label>
+                                            <input type="text" id="installAddress" name="installAddress" placeholder="123 Main Street" required>
+                                        </div>
+
+                                        <div class="form-group-row">
+                                            <div class="form-group">
+                                                <label for="installCity">City <span class="required">*</span></label>
+                                                <input type="text" id="installCity" name="installCity" placeholder="City" required>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label for="installState">State <span class="required">*</span></label>
+                                                <input type="text" id="installState" name="installState" placeholder="WA" maxlength="2" required>
+                                            </div>
+                                            <div class="form-group form-group-sm">
+                                                <label for="installZip">Zip <span class="required">*</span></label>
+                                                <input type="text" id="installZip" name="installZip" placeholder="98101" maxlength="10" required>
+                                            </div>
                                         </div>
 
                                         <div class="form-group">
@@ -385,6 +400,6 @@
         </div>
     </footer>
 
-    <script src="script.js?v=8"></script>
+    <script src="script.js?v=10"></script>
 </body>
 </html>

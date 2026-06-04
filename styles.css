@@ -256,6 +256,19 @@ body {
     text-decoration: underline;
 }
 
+.form-group-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.form-group-row .form-group-sm {
+    flex: 0 0 80px;
+}
+
 .input-two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
