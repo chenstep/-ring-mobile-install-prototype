@@ -368,7 +368,7 @@ body {
 
 .radio-option input[type="radio"]:checked ~ .radio-label {
     color: #1a73a7;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .radio-label {
@@ -415,7 +415,7 @@ body {
 }
 
 .device-option input[type="radio"]:checked ~ .device-label {
-    font-weight: 500;
+    font-weight: 700;
     color: #1a73a7;
 }
 
