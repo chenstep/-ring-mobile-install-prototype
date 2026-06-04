@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ring Mobile Security Tower - Professional Installation Request</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amazon+Ember:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
     <!-- Amazon Navigation Bar -->
@@ -45,325 +42,304 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Banner - Same image as live Ring installer page -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <img src="assets/ring-logo-white.svg" alt="Ring" class="ring-logo">
-                <h1>Request professional installation<br>for your Ring Mobile Security Tower</h1>
-                <p class="hero-subtitle">Our certified technicians will deliver, set up, and configure your Ring Mobile Security Tower at your location.</p>
-            </div>
-            <div class="hero-image">
-                <img src="assets/ring-mobile-tower-hero.svg" alt="Ring Mobile Security Tower Installation">
-            </div>
-        </div>
+        <img src="https://m.media-amazon.com/images/G/01/AmazonKey/2025/KeyforBusiness/LandingPage/RingInstallerPage/Group_21472278461.png" alt="Find a professional installer for your Ring device" class="hero-img">
     </section>
 
-    <!-- Trust Banner -->
-    <div class="trust-banner">
-        <div class="trust-inner">
-            <div class="trust-item">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span>Amazon-vetted professional installers</span>
-            </div>
-            <div class="trust-item">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <span>Satisfaction guaranteed</span>
-            </div>
-            <div class="trust-item">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                <span>Flexible scheduling</span>
-            </div>
-        </div>
+    <!-- Support Banner -->
+    <div class="support-banner">
+        <strong>Need technical support for your device or application?</strong> Contact our dedicated support line at 1-800-656-1918
     </div>
 
-    <!-- Main Form Section -->
-    <main class="form-section">
-        <div class="form-container">
-            <div class="form-header">
-                <h2>Installation Request Form</h2>
-                <p>Complete the form below to request professional installation for your Ring Mobile Security Tower.</p>
-            </div>
-
-            <!-- Progress Steps -->
-            <div class="progress-steps">
-                <div class="step active" data-step="1">
-                    <div class="step-number">1</div>
-                    <span class="step-label">Customer Info</span>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step" data-step="2">
-                    <div class="step-number">2</div>
-                    <span class="step-label">Installation Details</span>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step" data-step="3">
-                    <div class="step-number">3</div>
-                    <span class="step-label">Device & Contacts</span>
-                </div>
-                <div class="step-connector"></div>
-                <div class="step" data-step="4">
-                    <div class="step-number">4</div>
-                    <span class="step-label">Review & Submit</span>
-                </div>
-            </div>
-
+    <!-- Form Card (overlapping hero) -->
+    <main class="form-wrapper">
+        <div class="form-card">
             <form id="installForm" novalidate>
                 <!-- Step 1: Customer Information -->
                 <div class="form-step active" id="step1">
-                    <h3 class="section-title">Customer Information</h3>
-                    <p class="section-description">Pre-filled from your Amazon Business account. Please verify your details.</p>
-
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="customerName">Customer Name <span class="required">*</span></label>
-                            <input type="text" id="customerName" name="customerName" value="John Smith" required>
-                            <span class="prefilled-badge">From Amazon Business</span>
+                    <div class="form-layout">
+                        <div class="form-left">
+                            <div class="step-indicator">Step 1 of 3</div>
+                            <h2 class="form-title">Enter your details to request installation</h2>
+                            <p class="form-note">Please note: Installation services are provided by independent third-party contractors. Amazon and Ring do not verify contractor credentials or licensing. Customers are responsible for vetting contractors and ensuring compliance with local requirements.</p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="customerEmail">Customer Email <span class="required">*</span></label>
-                            <input type="email" id="customerEmail" name="customerEmail" value="john.smith@company.com" required>
-                            <span class="prefilled-badge">From Amazon Business</span>
-                        </div>
+                        <div class="form-right">
+                            <div class="input-container">
+                                <div class="form-group">
+                                    <label for="customerName">Customer Name <span class="required">*</span></label>
+                                    <input type="text" id="customerName" name="customerName" placeholder="Full name" required>
+                                </div>
 
-                        <div class="form-group">
-                            <label for="customerPhone">Customer Phone <span class="required">*</span></label>
-                            <input type="tel" id="customerPhone" name="customerPhone" value="(555) 123-4567" required>
-                            <span class="prefilled-badge">From Amazon Business</span>
-                        </div>
+                                <div class="form-group">
+                                    <label for="customerEmail">Customer Email <span class="required">*</span></label>
+                                    <input type="email" id="customerEmail" name="customerEmail" placeholder="email@company.com" required>
+                                </div>
 
-                        <div class="form-group">
-                            <label for="purchaseDate">Purchase Date</label>
-                            <input type="date" id="purchaseDate" name="purchaseDate" value="2026-05-15">
-                            <span class="prefilled-badge">From Amazon Business</span>
-                        </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">Customer Phone <span class="required">*</span></label>
+                                    <input type="tel" id="customerPhone" name="customerPhone" placeholder="(555) 000-0000" required>
+                                </div>
 
-                        <div class="form-group">
-                            <label for="orderNumber">Order Number</label>
-                            <input type="text" id="orderNumber" name="orderNumber" value="114-3941689-8772200">
-                            <span class="prefilled-badge">From Amazon Business</span>
-                        </div>
-                    </div>
+                                <div class="form-group">
+                                    <label for="orderNumber">Order Number</label>
+                                    <input type="text" id="orderNumber" name="orderNumber" placeholder="e.g. 114-3941689-8772200">
+                                </div>
 
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-primary" onclick="goToStep(2)">Continue to Installation Details</button>
+                                <button type="button" class="btn-next" id="btnNext1" onclick="goToStep(2)">Next</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Step 2: Installation Details -->
+                <!-- Step 2: Installation & Device Details -->
                 <div class="form-step" id="step2">
-                    <h3 class="section-title">Installation Details</h3>
-                    <p class="section-description">Tell us where you'd like the Ring Mobile Security Tower installed.</p>
-
-                    <div class="form-grid">
-                        <div class="form-group full-width">
-                            <label for="installAddress">Installation Address <span class="required">*</span></label>
-                            <input type="text" id="installAddress" name="installAddress" placeholder="Enter full street address" required>
+                    <div class="form-layout">
+                        <div class="form-left">
+                            <div class="step-indicator"><button type="button" class="back-arrow" onclick="goToStep(1)" aria-label="Back"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>Step 2 of 3</div>
+                            <h2 class="form-title">Provide installation and device details</h2>
                         </div>
 
-                        <div class="form-group full-width">
-                            <label>Installation Location Type <span class="required">*</span></label>
-                            <div class="radio-group">
-                                <label class="radio-option">
-                                    <input type="radio" name="locationType" value="parking_lot" required>
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-label">Parking Lot</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="locationType" value="construction_site">
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-label">Construction Site</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="locationType" value="event_venue">
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-label">Event Venue</span>
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="locationType" value="other">
-                                    <span class="radio-custom"></span>
-                                    <span class="radio-label">Other</span>
-                                </label>
+                        <div class="form-right">
+                            <div class="input-container">
+                                <div class="input-two-col">
+                                    <div class="input-col">
+                                        <div class="form-group">
+                                            <label for="installAddress">Installation Address <span class="required">*</span></label>
+                                            <input type="text" id="installAddress" name="installAddress" placeholder="Enter full street address" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Installation Location Type <span class="required">*</span></label>
+                                            <div class="radio-group">
+                                                <label class="radio-option">
+                                                    <input type="radio" name="locationType" value="parking_lot" required>
+
+                                                    <span class="radio-label">Parking Lot</span>
+                                                </label>
+                                                <label class="radio-option">
+                                                    <input type="radio" name="locationType" value="construction_site">
+
+                                                    <span class="radio-label">Construction Site</span>
+                                                </label>
+                                                <label class="radio-option">
+                                                    <input type="radio" name="locationType" value="event_venue">
+
+                                                    <span class="radio-label">Event Venue</span>
+                                                </label>
+                                                <label class="radio-option">
+                                                    <input type="radio" name="locationType" value="other">
+
+                                                    <span class="radio-label">Other</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group hidden" id="otherSpecifyGroup">
+                                            <label for="otherSpecify">Please Specify <span class="required">*</span></label>
+                                            <input type="text" id="otherSpecify" name="otherSpecify" placeholder="Describe the installation location">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-col">
+                                        <div class="form-group">
+                                            <label>Device Type <span class="required">*</span></label>
+                                            <div class="device-select">
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_base" required>
+                                                    <span class="device-label">Ring Mobile Security Tower</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_solar">
+                                                    <span class="device-label">Ring Mobile Security Tower + Solar Kit</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_trailer">
+                                                    <span class="device-label">Ring Mobile Security Tower + Trailer Kit</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_trailer_solar">
+                                                    <span class="device-label">Ring Mobile Security Tower + Trailer Kit + Solar Kit</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_iloq">
+                                                    <span class="device-label">Ring Mobile Security Tower w/ iLOQ</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_iloq_solar">
+                                                    <span class="device-label">Ring Mobile Security Tower w/ iLOQ + Solar Kit</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_iloq_trailer">
+                                                    <span class="device-label">Ring Mobile Security Tower w/ iLOQ + Trailer Kit</span>
+                                                </label>
+                                                <label class="device-option">
+                                                    <input type="radio" name="deviceType" value="tower_iloq_trailer_solar">
+                                                    <span class="device-label">Ring Mobile Security Tower w/ iLOQ + Trailer Kit + Solar Kit</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn-next" id="btnNext2" onclick="goToStep(3)">Next</button>
                             </div>
                         </div>
-
-                        <div class="form-group full-width other-specify hidden" id="otherSpecifyGroup">
-                            <label for="otherSpecify">Please Specify <span class="required">*</span></label>
-                            <input type="text" id="otherSpecify" name="otherSpecify" placeholder="Describe the installation location">
-                        </div>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" onclick="goToStep(1)">Back</button>
-                        <button type="button" class="btn btn-primary" onclick="goToStep(3)">Continue to Device Selection</button>
                     </div>
                 </div>
 
-                <!-- Step 3: Device & Contact Info -->
+                <!-- Step 3: Additional Contact Info -->
                 <div class="form-step" id="step3">
-                    <h3 class="section-title">Device & Contact Information</h3>
-                    <p class="section-description">Select your device configuration and provide optional contact details.</p>
+                    <div class="form-layout">
+                        <div class="form-left">
+                            <div class="step-indicator"><button type="button" class="back-arrow" onclick="goToStep(2)" aria-label="Back"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>Step 3 of 3</div>
+                            <h2 class="form-title">Provide additional contact information</h2>
+                        </div>
 
-                    <div class="form-grid">
-                        <div class="form-group full-width">
-                            <label>Device Type <span class="required">*</span></label>
-                            <div class="device-select">
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_base" required>
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower</span>
-                                        <span class="device-desc">Base unit</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_solar">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower + Solar Kit</span>
-                                        <span class="device-desc">Solar-powered operation</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_trailer">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower + Trailer Kit</span>
-                                        <span class="device-desc">Portable trailer mount</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_trailer_solar">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower + Trailer Kit + Solar Kit</span>
-                                        <span class="device-desc">Portable with solar power</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_iloq">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower w/ iLOQ</span>
-                                        <span class="device-desc">Digital access control</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_iloq_solar">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower w/ iLOQ + Solar Kit</span>
-                                        <span class="device-desc">iLOQ with solar power</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_iloq_trailer">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower w/ iLOQ + Trailer Kit</span>
-                                        <span class="device-desc">iLOQ with trailer mount</span>
-                                    </div>
-                                </label>
-                                <label class="device-option">
-                                    <input type="radio" name="deviceType" value="tower_iloq_trailer_solar">
-                                    <div class="device-card">
-                                        <span class="device-name">Ring Mobile Security Tower w/ iLOQ + Trailer Kit + Solar Kit</span>
-                                        <span class="device-desc">Full configuration</span>
-                                    </div>
-                                </label>
+                        <div class="form-right">
+                            <div class="input-container">
+                                <div class="form-group">
+                                    <label for="ringEmail">Ring Account Email</label>
+                                    <input type="email" id="ringEmail" name="ringEmail" placeholder="email@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactName">Onsite Point-of-Contact Name</label>
+                                    <input type="text" id="contactName" name="contactName" placeholder="Full name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail">Onsite Point-of-Contact Email</label>
+                                    <input type="email" id="contactEmail" name="contactEmail" placeholder="email@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactPhone">Onsite Point-of-Contact Phone</label>
+                                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="(555) 000-0000">
+                                </div>
+
+                                <button type="submit" class="btn-next active">Submit Request</button>
                             </div>
+                            <p class="form-disclaimer">By clicking "Submit," you authorize us to share your information with the selected third party installers to provide installation quotes. You acknowledge that your information will be used by these third party installers in accordance with their privacy policies. Your information will be used by Amazon as outlined in our <a href="#">Privacy Notice</a>.</p>
                         </div>
-
-                        <div class="form-group full-width section-divider">
-                            <h4 class="subsection-title">Optional Information</h4>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="ringEmail">Ring Account Email</label>
-                            <input type="email" id="ringEmail" name="ringEmail" placeholder="email@example.com">
-                            <span class="optional-badge">Optional</span>
-                        </div>
-
-                        <div class="form-group full-width section-divider">
-                            <h4 class="subsection-title">Onsite Point-of-Contact</h4>
-                            <p class="subsection-desc">Person available at the installation location during setup.</p>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contactName">Contact Name</label>
-                            <input type="text" id="contactName" name="contactName" placeholder="Full name">
-                            <span class="optional-badge">Optional</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contactEmail">Contact Email</label>
-                            <input type="email" id="contactEmail" name="contactEmail" placeholder="email@example.com">
-                            <span class="optional-badge">Optional</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contactPhone">Contact Phone</label>
-                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="(555) 000-0000">
-                            <span class="optional-badge">Optional</span>
-                        </div>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" onclick="goToStep(2)">Back</button>
-                        <button type="button" class="btn btn-primary" onclick="goToStep(4)">Review & Submit</button>
-                    </div>
-                </div>
-
-                <!-- Step 4: Review & Submit -->
-                <div class="form-step" id="step4">
-                    <h3 class="section-title">Review Your Request</h3>
-                    <p class="section-description">Please review your installation request details before submitting.</p>
-
-                    <div class="review-sections" id="reviewContent">
-                        <!-- Populated by JS -->
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" onclick="goToStep(3)">Back</button>
-                        <button type="submit" class="btn btn-primary btn-submit">Submit Installation Request</button>
                     </div>
                 </div>
             </form>
 
-            <!-- Success State -->
-            <div class="success-state hidden" id="successState">
-                <div class="success-icon">
-                    <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="#1a8917" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 16 9.5"/></svg>
+            <!-- Confirmation -->
+            <div class="form-step" id="confirmationStep">
+                <div class="confirmation">
+                    <div class="confirmation-icon">
+                        <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="#1a8917" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11.5 14.5 16 9.5"/></svg>
+                    </div>
+                    <h2>Installation Request Submitted</h2>
+                    <p>Your request has been received. A professional installer will contact you within 2 business days to schedule your Ring Mobile Security Tower installation.</p>
+                    <div class="confirmation-number">
+                        Confirmation #: <strong>RING-MST-2026-<span id="confirmNum"></span></strong>
+                    </div>
+                    <button type="button" class="btn-next" onclick="location.reload()">Submit Another Request</button>
                 </div>
-                <h2>Installation Request Submitted</h2>
-                <p>Your request has been received. A professional installer will contact you within 2 business days to schedule your Ring Mobile Security Tower installation.</p>
-                <div class="confirmation-number">
-                    Confirmation #: <strong>RING-MST-2026-<span id="confirmNum"></span></strong>
-                </div>
-                <button type="button" class="btn btn-primary" onclick="location.reload()">Submit Another Request</button>
             </div>
         </div>
     </main>
 
     <!-- FAQ Section -->
     <section class="faq-section">
-        <div class="faq-container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <details class="faq-item">
-                    <summary>What does professional installation include?</summary>
-                    <p>Professional installation includes delivery, physical setup of your Ring Mobile Security Tower, network configuration, Ring app pairing, and a walkthrough of your system's features. The technician will ensure all cameras and sensors are functioning correctly before completing the installation.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>How long does installation take?</summary>
-                    <p>A standard installation typically takes 2-4 hours depending on the configuration. Installations with solar kits or trailer setups may require additional time for proper alignment and calibration.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>What site requirements are needed?</summary>
-                    <p>The installation site should have a relatively flat surface, adequate clearance for the tower height, and cellular coverage for the unit's connectivity. For solar kit configurations, an unobstructed sky view is recommended. Our technician will assess the site upon arrival.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>Can I reschedule my installation?</summary>
-                    <p>Yes, you can reschedule your installation up to 24 hours before the scheduled appointment. Contact our installation support team or reply to your confirmation email to arrange a new time.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>What happens after I submit this form?</summary>
-                    <p>After submission, a certified installer in your area will be assigned to your request. They will contact you within 2 business days to schedule a convenient installation date and time. You'll receive a confirmation email with all the details.</p>
-                </details>
+        <h2 class="faq-heading">Frequently asked questions</h2>
+
+        <div class="faq-support-text">
+            <strong>Need technical support for your device or application?</strong> Contact our dedicated support line at <a href="tel:1-800-656-1918">1-800-656-1918</a>
+        </div>
+
+        <div class="faq-category">
+            <h3>General installation questions</h3>
+
+            <div class="faq-qa">
+                <p class="faq-question">How can I find a professional to install my Ring device?</p>
+                <p class="faq-answer">After purchasing your Ring device on Amazon, you can find a professional installer using our locator tool above. Simply enter your zip code to see a list of installation professionals in your area.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">Do I need professional installation for my Ring device?</p>
+                <p class="faq-answer">While most Ring devices are designed for easy self-installation, some customers prefer professional installation for optimal placement, proper wiring, or integration with existing systems. Professional installation is recommended for more complex setups or if you're not comfortable with DIY installation. Installation by a qualified electrician may be required in your area. Refer to your local laws and building codes before performing electrical work; permits and/or professional installation may be required by law.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">How much does professional installation cost?</p>
+                <p class="faq-answer">Installation costs vary depending on your location, the type of Ring device, and the complexity of the installation. When you locate a professional through our dealer locator, you can contact them directly for a price quote before scheduling.</p>
+            </div>
+        </div>
+
+        <img src="https://m.media-amazon.com/images/G/01/AmazonKey/2025/KeyforBusiness/LandingPage/RingInstallerPage/Line_6.png" alt="Divider" class="faq-divider">
+
+        <div class="faq-category">
+            <h3>Scheduling and preparation</h3>
+
+            <div class="faq-qa">
+                <p class="faq-question">How do I schedule an installation appointment?</p>
+                <p class="faq-answer">After finding an installer through our dealer locator tool, you can contact them directly using the provided phone number or email address to schedule an appointment at a convenient time.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">What should I have ready before the installer arrives?</p>
+                <div class="faq-answer">
+                    <p>Before your appointment, please have:</p>
+                    <ul class="faq-checklist">
+                        <li>Your Ring device and all included components</li>
+                        <li>Your purchase receipt or order number</li>
+                        <li>Access to your home Wi-Fi network and password</li>
+                        <li>The Ring app downloaded on your mobile device</li>
+                        <li>Clear access to the installation area</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">How long does professional installation typically take?</p>
+                <p class="faq-answer">Most Ring device installations take between 30-60 minutes, depending on the device type and complexity. Doorbell installations that require wiring may take longer than battery-powered camera installations.</p>
+            </div>
+        </div>
+
+        <img src="https://m.media-amazon.com/images/G/01/AmazonKey/2025/KeyforBusiness/LandingPage/RingInstallerPage/Line_6.png" alt="Divider" class="faq-divider">
+
+        <div class="faq-category">
+            <h3>Post-purchase questions</h3>
+
+            <div class="faq-qa">
+                <p class="faq-question">I just purchased a Ring device on Amazon. When can I schedule installation?</p>
+                <p class="faq-answer">You can schedule installation as soon as you receive your Ring device. We recommend having the device in hand before scheduling so the installer can complete the setup in one visit.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">Can I purchase installation services at the same time as my Ring device on Amazon?</p>
+                <p class="faq-answer">Currently, installation services are not bundled with Ring device purchases on Amazon. You'll need to arrange installation separately through our dealer locator after receiving your device.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">What if I need installation for multiple Ring devices?</p>
+                <p class="faq-answer">Typically, installers can handle multiple device installations in a single appointment. When contacting an installer, be sure to mention all devices you need installed so they can provide an accurate time and cost estimate.</p>
+            </div>
+        </div>
+
+        <img src="https://m.media-amazon.com/images/G/01/AmazonKey/2025/KeyforBusiness/LandingPage/RingInstallerPage/Line_6.png" alt="Divider" class="faq-divider">
+
+        <div class="faq-category">
+            <h3>What to expect from your installer</h3>
+
+            <div class="faq-qa">
+                <p class="faq-question">Will the installer help me set up the Ring app?</p>
+                <p class="faq-answer">Yes, most installers will assist with basic app setup, including connecting your device to Wi-Fi and ensuring proper functionality before completing the installation.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">Can installers help with integrating Ring with other smart home systems?</p>
+                <p class="faq-answer">Many installers can assist with basic integration of Ring devices with compatible smart home systems like Alexa. For complex integrations, ask the installer about their capabilities before scheduling.</p>
+            </div>
+
+            <div class="faq-qa">
+                <p class="faq-question">What if I'm not satisfied with the installation?</p>
+                <p class="faq-answer">If you experience any issues with your installation, contact your installer directly. If you need additional assistance, Ring Customer Support is available to help resolve any concerns.</p>
             </div>
         </div>
     </section>
@@ -409,6 +385,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=8"></script>
 </body>
 </html>
