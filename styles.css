@@ -432,6 +432,19 @@ body {
     color: #1a73a7;
 }
 
+.device-option input[type="radio"]:checked ~ .device-price {
+    font-weight: 700;
+    color: #1a73a7;
+}
+
+.device-price {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f1111;
+    white-space: nowrap;
+}
+
 /* Buttons */
 .btn-next {
     display: block;
